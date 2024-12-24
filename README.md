@@ -17,8 +17,6 @@ Before running the application, ensure that the following are installed on your 
 - SharpPcap (for capturing packets)
 - PacketDotNet (for parsing network packets)
 
-You can install the required libraries via NuGet Package Manager or the following commands:
-
 
 
 ## Usage
