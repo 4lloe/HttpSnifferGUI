@@ -1,4 +1,4 @@
-# HTTP Sniffer GUI
+# HTTP Sniffer 
 
 This is a simple HTTP/HTTPS packet sniffer built using C# and the `SharpPcap` and `PacketDotNet` libraries. It allows users to capture network traffic on selected network interfaces and inspect HTTP/HTTPS packet data.
 
@@ -41,13 +41,6 @@ You can install the required libraries via NuGet Package Manager or the followin
 6. **Detect XSS Vulnerabilities**:
    The sniffer includes a basic XSS vulnerability detection mechanism. If a captured HTTP/HTTPS packet contains potential XSS patterns (e.g., `<script>`, `document.cookie`, etc.), it will be flagged.
 
-## Screenshots
-
-- **Main Window**:  
-  ![Main Window](./assets/main_window.png)
-
-- **Captured Data Example**:  
-  ![Captured Data](./assets/captured_data_example.png)
 
 ## Troubleshooting
 
