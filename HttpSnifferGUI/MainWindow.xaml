@@ -1,0 +1,21 @@
+﻿<Window x:Class="HttpSnifferGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HTTP/HTTPS Sniffer" Height="450" Width="800">
+    <Grid>
+        <!-- Заголовок для ComboBox -->
+        <Label Content="Select Network Interface" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="300"/>
+
+        <!-- Список сетевых интерфейсов -->
+        <ComboBox x:Name="InterfaceList" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,40,0,0"/>
+
+        <!-- Кнопка "Начать захват" -->
+        <Button Content="Start Capture" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="320,40,0,0" Click="StartCapture_Click"/>
+
+        <!-- Кнопка "Остановить захват" -->
+        <Button Content="Stop Capture" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="430,40,0,0" Click="StopCapture_Click"/>
+
+        <!-- Текстовое поле для отображения захваченных данных -->
+        <TextBox x:Name="CapturedData" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,80,10,10" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" IsReadOnly="True"/>
+    </Grid>
+</Window>
